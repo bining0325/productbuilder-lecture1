@@ -1,5 +1,14 @@
 const lottoContainer = document.getElementById('lotto-numbers');
 const drawBtn = document.getElementById('draw-btn');
+const themeBtn = document.getElementById('theme-btn');
+
+// Theme Toggle Logic
+let isDark = false;
+themeBtn.addEventListener('click', () => {
+    isDark = !isDark;
+    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    themeBtn.textContent = isDark ? '☀️ 화이트 모드' : '🌙 다크 모드';
+});
 
 function generateLottoNumbers() {
     const numbers = [];
