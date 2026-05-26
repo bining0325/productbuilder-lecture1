@@ -163,6 +163,11 @@ h1 {
     background-color: #1e88e5;
 }
 
+.comment-section {
+    margin-top: 2rem;
+    text-align: left;
+}
+
 button {
     border: none;
     border-radius: 5px;
